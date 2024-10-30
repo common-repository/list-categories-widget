@@ -1,0 +1,22 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.pfq-product-categories {list-style: none; padding: 0; margin: 0;}
+.pfq-product-categories ul.children.pfq-parent-list{ list-style: none; }
+.pfq-product-categories li.cat-item .children li a{ color: inherit; }
+.pfq-product-categories > li:last-child{ padding: 0;border: none; }
+.pfq-product-categories li.cat-item{ position: relative;cursor: pointer; padding-left: 0;}
+.pfq-product-categories li.cat-item > a{position: relative;padding-left: 25px;display: inline-block;padding-right: 5px; padding-top: 10px;padding-bottom: 10px; text-decoration: none;}
+.pfq-product-categories li.cat-item > a:before{position: absolute;content:"\f067";left: 0;top: 50%;transform: translateY(-50%); font-family: "Font Awesome 5 Free";font-weight: 900;font-size: 13px;}
+.pfq-product-categories li.cat-item.pfq-active > a:before{ content:"\f068"; }
+.pfq-product-categories li.cat-item img{width: 48px;height: 48px;position: absolute;right: 0;top: -4px;}
+.pfq-product-categories li.cat-item .children{ padding-left: 25px; padding-top: 10px;padding-bottom: 5px;}
+.pfq-product-categories li.cat-item .children img{ display: none; }
+.pfq-product-categories li.cat-item .children li a{ font-size: 14px;padding: 0; }
+.pfq-product-categories li.cat-item .children a:before{ display: none; }
+
+
+/**css for store front theme */
+.pfq-product-categories li.cat-item::before{ display: none; }
